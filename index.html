@@ -1,11 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TODO LIST</h1>
+      <div class="navigation-bar">
+        <input type="text" name="" id="search" />
+        <select name="" id="">
+          <option value="all" selected>All</option>
+          <option value="">Complete</option>
+          <option value="">Incomplete</option>
+        </select>
+        <button>🌙</button>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <div class="task">
+                <input type="checkbox" name="" id="" />
+                <span>Note 1</span>
+            </div>
+            <div class="action-buttons">
+              <button class="edit">✏</button><button class="delete">🗑</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="addTaskModal">
+        <h2>New note</h2>
+        <form>
+            <input type="text">
+            <div class="newNoteButtons">
+                <input type="button" value="cancel" class="cancel">
+                <input type="submit" value="apply" class="apply">
+            </div>
+        </form>
+      </div>
+      <button class="add">+</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
