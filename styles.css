@@ -95,3 +95,13 @@ input[type="checkbox"] {
     color: white;
     background: violet;
 }
+.addTaskWindow {
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center exactly */
+}
