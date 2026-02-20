@@ -21,7 +21,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 }
 .list ul li:hover {
   background: rgba(95, 95, 95, 0.1);
@@ -31,12 +30,14 @@ h1 {
   height: 30px;
   width: 40px;
   border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 .edit {
-  background: rgb(0, 255, 89);
+  background: rgb(0, 183, 255);
 }
 .delete {
-  background: rgb(255, 34, 0);
+  background: rgb(255, 115, 0);
 }
 .add {
   height: 50px;

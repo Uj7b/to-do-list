@@ -3,13 +3,16 @@ let add = document.getElementById("add");
 let apply = document.getElementById("apply");
 let cancel = document.getElementById("cancel");
 let addModal = document.getElementById("addTaskWindow");
+let taskInput = document.getElementById("taskInput");
 
 search.addEventListener("input", (ev) => {
   console.log(ev.target.value);
 });
 
 function addTodo() {
-
+  console.log(taskInput.value);
+  taskInput.value = ""
+  addModal.style.visibility = "hidden"
 }
 function renderList() {}
 
@@ -28,4 +31,4 @@ addModal.addEventListener("click", (e) => {
   e.stopPropagation()
 });
 
-apply.addEventListener("click", addTodo())
+apply.addEventListener("click", addTodo)
