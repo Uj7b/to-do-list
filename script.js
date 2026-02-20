@@ -16,7 +16,12 @@ function addTodo() {
 }
 function renderList() {}
 
-function filterTodo() {}
+function filterTodo() {
+
+  
+}
+
+
 add.addEventListener("click", (ev) => {
   addModal.style.visibility = "visible";
 });
