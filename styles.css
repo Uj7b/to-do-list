@@ -112,3 +112,12 @@ input[type="checkbox"] {
   left: 50%;
   transform: translate(-50%, -50%); /* center exactly */
 }
+.navigation-bar {
+  background: #000;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.navigation-bar .search {
+  width: 70%;
+}
