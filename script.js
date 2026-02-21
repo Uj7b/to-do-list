@@ -10,7 +10,7 @@ search.addEventListener("input", (ev) => {
 });
 
 function addTodo() {
-  localStorage.setItem("task", taskInput.value);
+  localStorage.setItem("task", taskInput.value); //! The key is unique, so it will only change, not add
   taskInput.value = "";
   addModal.style.visibility = "hidden";
 }
