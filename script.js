@@ -10,15 +10,19 @@ search.addEventListener("input", (ev) => {
 });
 
 function addTodo() {
-  console.log(taskInput.value);
+  localStorage.setItem('task', taskInput.value)
   taskInput.value = ""
   addModal.style.visibility = "hidden"
 }
-function renderList() {}
+function renderList() {
+  for (let i = 0;i < localStorage.length; i++) {
+    
+  }
+}
 
 function filterTodo() {
 
-  
+
 }
 
 
